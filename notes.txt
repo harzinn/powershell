@@ -1,0 +1,7 @@
+
+Setting a static IP using powershell
+
+    Get-NetAdapter -IncludeHidden
+        Note Index Number
+
+    New-NetIPAddress -InterfaceIndex 24 -IPAddress 172.29.16.1 -PrefixLength 28 -DefaultGateway 172.29.16.254
